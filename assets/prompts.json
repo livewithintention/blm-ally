@@ -1,0 +1,138 @@
+[
+  {
+    "title": "Let's pause for a hot second.",
+    "subtitle": "This year has been especially nuts and it's okay if you're not feeling ideal right now. Before you start reflecting, I invite you to find a safe and relatively quiet place if you have access to one, and take a minute to breathe slowly and deeply from your diaphragm until you feel more relaxed than you were before.",
+    "noInput": true
+  },
+  {
+      "title": "Brief manifesto: My personal intention for how I want to show up as an ally.",
+      "exampleLabel": "Examples",
+      "examples": [
+        "I want to show up in a supportive way that helps others feel heard",
+        "I want to actively dismantle the ways I have been complicit in an unfair system",
+        "I want to help sway and onboard new allies",
+        "I want to contribute to structural equality around my city/neighborhood",
+        "I want to better align my actions with my ethical values"
+      ],
+      "areExamplesQuoted": true
+  },
+  {
+    "title": "Actionables",
+    "isHeader": true
+  },
+  {
+    "title": "3+ detailed ways I will commit, starting now, to embodying this in my daily life",
+    "exampleLabel": "Examples",
+    "examples": [
+      "I will offer support without expecting recognition",
+      "I will seek out and amplify black perspectives",
+      "I will do my best to listen and fully believe, with an open mind, without interrupting",
+      "When I make mistakes, I will focus on making amends instead of centering my shame or discomfort",
+      "I will find calls to action made by black community leaders",
+      "I will share and discuss my learnings with other allies"
+    ],
+    "areExamplesQuoted": true
+  },
+  {
+    "title": "Skills or self-education I will need to acquire in order to better fulfill my intentions.",
+    "subtitle": "There's no shame in not having a skill right at this moment. We all start from wherever we are right now.",
+    "exampleLabel": "Examples",
+    "examples": [
+      "I will learn more about my privileges and what it's like for those who don't have them",
+      "I will learn how I can use my privileges in service of others' safety",
+      "I will read books and articles on how to be a better ally to BIPOCs",
+      "I will read about what BIPOCs want from allies so I'm not offering unsolicited actions",
+      "I will learn more about modern black history as told by black authors/speakers",
+      "I will learn what microaggressions look like",
+      "I will learn how to mindfully sit with my discomfort so I can be present for others",
+      "I will learn how to get involved in my local government"
+    ],
+    "areExamplesQuoted": true
+  },
+  {
+    "title": "3+ resources that seem helpful for me.",
+    "exampleLabel": "Suggestions",
+    "examples": [
+      {
+        "href": "https://blacklivesmatters.carrd.co/",
+        "linkText": "Action / resource list"
+      },
+      {
+        "href": "https://sojo.net/articles/our-white-friends-desiring-be-allies",
+        "linkText": "For Our White Friends Desiring To Be Allies | Sojo",
+        "description": "Suggestions on how to better hold space for BIPOCs"
+      },
+      {
+        "href": "https://theconversation.com/what-is-intersectionality-all-of-who-i-am-105639",
+        "linkText": "What is intersectionality? | The Conversation",
+        "description": "On intersectional privilege, and how to unpack different aspects of it"
+      },
+      {
+        "href": "https://www.amazon.com/gp/product/B07QBNKJTZ/",
+        "linkText": "So You Want To Talk About Race (Ijeoma Oluo)",
+        "description": "On recognizing subtle everyday racism, tips for new allies, and structural injustice. Has clear bullet point guides on how to address race more productively in conversation."
+      },
+      {
+        "href": "https://www.amazon.com/dp/1620971933/",
+        "linkText": "The New Jim Crow: Mass Incarceration In An Age Of Colorblindness (Michelle Alexander)",
+        "description": "A historical compilation on the mechanisms of modern slavery and black oppression through statistically biased mass incarceration in America."
+      }
+    ]
+  },
+  {
+    "title": "3+ actions I feel capable of taking in the next two days.",
+    "exampleLabel": "Ideas",
+    "examples": [
+      "go through a resource you listed above",
+      "find a protest, or a way to provide support/aid to protesters",
+      "call/text local legislators",
+      "find a volunteer opportunity",
+      "donate, or budget out your donation capacity",
+      "share resources with friends (or strangers)",
+      "ask someone who is having a difficult time if you can do anything for them",
+      "have an empathetic conversation with someone neutral to this movement, and win them over instead of driving them away",
+      "use your goodwill with a non-allied acquaintance or relative to initiate an incredibly uncomfortable empathetic conversation about the importance of this movement to you",
+      "make a list of actions to take"
+    ]
+  },
+  {
+    "title": "Personal anchors",
+    "isHeader": true
+  },
+  {
+    "title": "What selfish motivation drives me most as an ally?",
+    "subtitle": "(I don't mean “why is this movement important”; if we're here, we already know that people's lives are important for their own sake. Deep inside, what personal thing selfishly drives YOU to prioritize this?)",
+    "exampleLabel": "Examples",
+    "examples": [
+      "Your own PoC experience?",
+      "Personal trauma empathy, or empathy with feelings of disempowerment & danger?",
+      "Parallels with a family story?",
+      "Wanting people you care about personally to be safe? Experiences from BIPOCs who are close to you?",
+      "Rage about unfair systems?",
+      "Wanting to make a difference in something that matters?",
+      "Wanting to feel good and helpful?",
+      "Wanting to fix systems that are broken?"
+    ]
+  },
+  {
+    "title": "What completely non-selfish motivation drives me most?",
+    "exampleLabel": "Examples",
+    "examples": [
+      "Everyone deserves a safe home",
+      "It's just the right thing to do",
+      "We are all in this world together"
+    ],
+    "areExamplesQuoted": true
+  },
+  {
+    "title": "When I feel discomfort about unpacking my own privilege, what can I remember?",
+    "exampleLabel": "Examples",
+    "examples": [
+      "I need to stay present for the people I'm allied to.",
+      "It is okay and normal to feel discomfort.",
+      "I did not choose this privilege. I am choosing to dismantle it.",
+      "It is important for me to fully understand my privilege so I can actively reduce the ways that systemic privilege harms others."
+    ],
+    "areExamplesQuoted": true
+  }
+]
