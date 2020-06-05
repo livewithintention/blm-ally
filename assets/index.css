@@ -72,6 +72,7 @@ form .prompt.header label {
 form .prompt label {
   display: block;
   font-style: oblique;
+  margin-bottom: 0.75em;
 }
 form .prompt .subtitle {
   margin-top: 0.75em;
@@ -109,6 +110,9 @@ form.minimal .prompt {
 form.minimal .prompt.header {
   margin-bottom: 1em;
 }
+form.minimal .prompt label {
+  margin-bottom: 0;
+}
 form.minimal .examples, form.minimal .no-input {
   display: none;
 }
@@ -136,6 +140,9 @@ form.minimal textarea:not(.is-empty) {
   }
   form .prompt.header {
     margin-bottom: 1em;
+  }
+  form .prompt label {
+    margin-bottom: 0;
   }
   form .examples, form .no-input {
     display: none;
