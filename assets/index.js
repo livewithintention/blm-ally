@@ -54,7 +54,8 @@ app.controller('myCtrl', function($scope, $http, $sce, $q) {
     // Gross conversion from px to em assuming the textarea font size.
     // This is so that we can use the print layout without having to
     // make any adjustments.
-    evt.target.style.height = ((evt.target.scrollHeight)/(18.0/0.75) - 1.0) + 'em';
+    evt.target.style.height = (evt.target.scrollHeight)/(18.0/0.75) + 'em';
+		evt.target.scrollHeight = evt.target.style.height;
     return evt.target.value.trim() !== ''; // return true if not empty
   };
 
