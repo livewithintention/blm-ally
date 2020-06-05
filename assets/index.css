@@ -1,7 +1,7 @@
 /* VARS */
 /* FONT STYLES */
 body {
-  color: #999;
+  color: #777;
 }
 
 body, form, textarea, button {
@@ -10,16 +10,16 @@ body, form, textarea, button {
 }
 
 h1, h2, h3, h4, h5, h6, .header, button {
-  color: #666;
+  color: #222;
 }
 
 textarea {
-  color: #333;
+  color: #222;
 }
 
 .examples, .subtitle {
   font-size: 11pt;
-  color: #999;
+  color: #777;
   font-style: oblique;
 }
 
