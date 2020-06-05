@@ -41,10 +41,6 @@
 	<label ng-if="prompt.title !== undefined">{[prompt.title]}</label>
   <div class="subtitle no-print"
      ng-if="prompt.subtitle !== undefined">{[prompt.subtitle]}</div>
-	<textarea ng-if="!prompt.isHeader && (prompt.noInput !== true)"
-					  data-lpignore="true"
-						ng-keyup="prompt.hasContent = handleTextAreaChange($event)"
-						ng-class="{'is-empty': prompt.hasContent !== true}"></textarea>
 
 	<div class="examples no-print"
 			 ng-if="prompt.examples !== undefined">
@@ -70,6 +66,10 @@
 		</ul>
 	</div>
 
+	<textarea ng-if="!prompt.isHeader && (prompt.noInput !== true)"
+					  data-lpignore="true"
+						ng-keyup="prompt.hasContent = handleTextAreaChange($event)"
+						ng-class="{'is-empty': prompt.hasContent !== true}"></textarea>
 </div>
 
 
