@@ -3,6 +3,10 @@
       ng-controller="myCtrl">
 <head>
 
+	<!-- Meta tags -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- Vendor styles -->
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
@@ -24,10 +28,10 @@
 
 <form ng-class="{'minimal': isDisplayMinimal}">
 
-<div class="prompt">
-  <h2 class="title">Intention setting for #BLM allies</h2>
-	<div class="subtitle">
-    <p>My hope is that these questions will help you create a personal manifesto for how you want to show up as an ally, something you can feel anchored to and personally driven by to reduce feelings of burnout so you can keep doing sustainable work.</p>
+<div class="prompt header">
+  <label>Setting intentions as a #BLM ally</label>
+	<div class="subtitle no-print">
+    <p>My hope is that these questions will help you create a personal, actionable, motivational manifesto for how you want to show up as an ally, recognizing that that can take many different forms. We all need something we feel anchored to and personally driven by to reduce feelings of burnout, so we can keep putting in sustainable effort.</p>
   </div>
 </div>
 
@@ -35,11 +39,14 @@
      ng-repeat="prompt in prompts"
      ng-class="{'header': prompt.isHeader, 'no-input': prompt.noInput}">
 	<label ng-if="prompt.title !== undefined">{[prompt.title]}</label>
-  <div class="subtitle"
+  <div class="subtitle no-print"
      ng-if="prompt.subtitle !== undefined">{[prompt.subtitle]}</div>
-	<textarea ng-if="!prompt.isHeader && (prompt.noInput !== true)"></textarea>
+	<textarea ng-if="!prompt.isHeader && (prompt.noInput !== true)"
+					  data-lpignore="true"
+						ng-keyup="prompt.hasContent = handleTextAreaChange($event)"
+						ng-class="{'is-empty': prompt.hasContent !== true}"></textarea>
 
-	<div class="examples"
+	<div class="examples no-print"
 			 ng-if="prompt.examples !== undefined">
 		<div class="examples-label"
 				 ng-if="prompt.exampleLabel !== undefined">
@@ -55,7 +62,7 @@
         <span ng-if="example.href!==undefined">
           <a href="{[example.href]}" target="_blank">{[example.linkText]}</a>
           <span ng-if="example.description" class="example-description">
-            {[example.description]}
+            - {[example.description]}
           </span>
         </span>
 
@@ -68,22 +75,21 @@
 
 </form>
 
-<h2>Todos</h2>
+<div class="controls no-print">
 
-<button ng-click="toggleDisplay()">
-<i class="fa"
-	 aria-hidden="true"
-   ng-class="{'fa-toggle-on': isDisplayMinimal, 'fa-toggle-off': !isDisplayMinimal}"
-	 ></i>
-Print mode
-</button>
+  <button ng-click="toggleDisplay()">
+    <i class="fa"
+    	 aria-hidden="true"
+       ng-class="{'fa-toggle-on': isDisplayMinimal, 'fa-toggle-off': !isDisplayMinimal}"
+    	 ></i>
+    {[ isDisplayMinimal ? "Hide" : "Show" ]} print version
+  </button>
+  
+  <button onclick="window.print();">
+    <i class="fa fa-print"></i>
+    Print
+  </button>
 
-<div class="subtitle">
-	<ul>
-		<li>Make a toggle to hide the examples</li>
-		<li>Make a "save to PDF / export image" button at the bottom</li>
-		<li>Make a cleaner non-mobile layout</li>
-	</ul>
 </div>
 
 

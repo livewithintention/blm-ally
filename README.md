@@ -4,4 +4,4 @@
 
 + [ ] give alert before tab is closed/navigated off
 + [ ] save to pdf/image function
-+ [ ] auto-resizing textareas lol
++ [x] auto-resizing textareas lol

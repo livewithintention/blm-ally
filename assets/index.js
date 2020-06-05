@@ -14,11 +14,19 @@ app.config(['$interpolateProvider', '$httpProvider',
 
 app.controller('myCtrl', function($scope, $http, $sce, $q) {
 
-	$scope.isDisplayMinimal = false;
+  $scope.isDisplayMinimal = false;
 
-	$scope.toggleDisplay = function() {
-		$scope.isDisplayMinimal = !$scope.isDisplayMinimal;
-	};
+  $scope.toggleDisplay = function() {
+    $scope.isDisplayMinimal = !$scope.isDisplayMinimal;
+    $scope.scrollToBottom();
+  };
+
+  $scope.scrollToBottom = function() {
+    window.setTimeout(function() {
+      document.body.scrollTop = 0;//document.body.scrollHeight;
+    }, 0);
+  };
+
 
   /* Load JSON */
   $scope.loadJsonInScope = function(jsonUrl, scopeVar, callback) {
@@ -40,6 +48,15 @@ app.controller('myCtrl', function($scope, $http, $sce, $q) {
   function loadPageData() {
     return $scope.loadJsonInScope('assets/prompts.json', 'prompts');
   }
+
+  $scope.handleTextAreaChange = function(evt) {
+    evt.target.style.height = 'auto';
+    // Gross conversion from px to em assuming the textarea font size.
+    // This is so that we can use the print layout without having to
+    // make any adjustments.
+    evt.target.style.height = ((evt.target.scrollHeight)/(18.0/0.75) - 1.0) + 'em';
+    return evt.target.value.trim() !== ''; // return true if not empty
+  };
 
   function setup() {
     loadPageData().then(function() {
