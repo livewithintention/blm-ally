@@ -1,7 +1,7 @@
 [
   {
     "title": "Let's pause for a hot second.",
-    "subtitle": "This year has been especially nuts and it's okay if you're not feeling ideal right now. Before you start reflecting, I invite you to find a safe and relatively quiet place if you have access to one, and take a minute to breathe slowly and deeply from your diaphragm, or until you feel more relaxed than you were before.",
+    "subtitle": "Before you start reflecting, take a minute to breathe slowly and deeply from your diaphragm, or do something else that helps you feel relaxed.",
     "noInput": true
   },
   {
@@ -12,7 +12,6 @@
         "I want to actively dismantle the ways I have been complicit in an oppressive system",
         "I want to help sway and onboard new allies",
 				"I want to contribute to direct action",
-        "I want to contribute to structural long-term change around my city/neighborhood",
 				"I want to help dismantle structural racism in my field, workplace, or community"
       ],
       "areExamplesQuoted": true
@@ -28,30 +27,8 @@
       "I will offer support without expecting recognition",
       "I will seek out and amplify black perspectives",
       "I will do my best to listen and affirm, with an open mind, without interrupting",
-      "When I make mistakes, I will focus on making amends instead of centering my shame or discomfort",
       "I will find calls to action made by black community leaders",
-      "I will share and discuss my learnings with other allies",
 			"I will initiate productive conversations about race issues with my relatives"
-    ],
-    "areExamplesQuoted": true
-  },
-  {
-    "title": "Skills or self-education I will need to acquire in order to better fulfill my intentions",
-    "subtitle": "There's no shame in not having a skill right at this moment. We all start from wherever we are right now.",
-    "exampleLabel": "Examples",
-    "examples": [
-      "I will learn more about my privileges and what it's like for those who don't have them",
-			"I will learn about ways structural racism shows up in my profession",
-      "I will read books and articles on how to be a better ally to BIPOCs",
-      "I will learn how I can use my privileges in service of others' safety",
-      "I will read about what BIPOCs want from allies so I'm not offering unsolicited actions",
-      "I will learn what microaggressions look like",
-      "I will learn how to mindfully sit with my discomfort so I can be present for others",
-      "I will learn more about modern black history as told by black authors/speakers",
-      "I will learn about ways everyday racism shows up that I have not noticed",
-      "I will learn about structural racism in legal and financial systems",
-      "I will learn how to get involved in my local government",
-			"I will learn how to address common sticky points with non-allies in a level-headed and informed way"
     ],
     "areExamplesQuoted": true
   },
@@ -104,18 +81,27 @@
     ]
   },
   {
+    "title": "Skills or self-education I will need to acquire in order to better fulfill my intentions",
+    "subtitle": "There's no shame in not having a skill right at this moment. We all start from wherever we are right now.",
+    "exampleLabel": "Examples",
+    "examples": [
+			"I will learn about ways everyday/structural racism shows up in my profession",
+      "I will learn what microaggressions look like",
+      "I will learn how to mindfully sit with my discomfort so I can be present for others",
+      "I will learn more about modern black history as told by black authors/speakers",
+			"I will learn how to address common sticky points with non-allies in a level-headed and informed way"
+    ],
+    "areExamplesQuoted": true
+  },
+  {
     "title": "3+ actions I feel capable of taking in the next 3 days",
     "exampleLabel": "Ideas",
     "examples": [
-      "go through a resource you listed above",
-      "find a protest, or a way to provide support/aid to protesters",
-      "call/text local legislators",
-      "find a volunteer opportunity",
-      "donate, or budget out your donation capacity",
-      "share resources with friends (or strangers)",
-      "ask someone who is having a difficult time if you can do anything for them",
-      "have an honest conversation about BLM with a non-ally (perhaps a relative)",
-      "simply make a checklist of actions to take"
+      "Find a protest, or a way to provide support/aid to protesters",
+      "Call/text local legislators",
+      "Donate, or budget a donation capacity",
+      "Ask someone who is having a difficult time if you can do anything for them",
+      "Have an honest conversation about BLM with a non-ally (perhaps a relative)"
     ]
   },
   {
@@ -127,15 +113,11 @@
     "subtitle": "(I don't mean “why is this movement important”; if we're here, we already know that. Deep inside, what personal thing selfishly drives YOU to prioritize this?)",
     "exampleLabel": "Examples",
     "examples": [
-      "Personal trauma empathy, or empathy with feelings of disempowerment & danger?",
-      "Your own PoC experience?",
+      "Personal trauma/PoC experience? Empathy with feelings of disempowerment & danger?",
       "Wanting people you care about personally to be safe? BIPOCs who are close to you?",
 			"Are you more comfortable in diverse, thriving communities?",
-      "Rage about unfair systems?",
       "Wanting to contribute to something that matters?",
-      "Wanting to feel good and helpful?",
-      "Wanting to fix systems that are broken?",
-			"Diversity is crucial for creativity and innovation"
+      "Wanting to feel good and helpful?"
     ]
   },
   {
@@ -145,8 +127,7 @@
       "I need to stay present for the people I'm allied to.",
       "It is okay and normal to feel discomfort.",
       "I did not choose this privilege. I am choosing to dismantle it.",
-      "It is important for me to fully understand my privilege so I can actively reduce the ways that systemic privilege harms others.",
-      "Race issues affect all of us. Not just BIPOCs, who are harmed directly. Even if the system is less unfair to white people, it is more unfair to everyone than if we worked together."
+      "It is important for me to fully understand my privilege so I can actively reduce the ways that systemic privilege harms others."
     ],
     "areExamplesQuoted": true
   },
@@ -158,8 +139,7 @@
 				"href": "https://ptsd-resources.github.io/#therapy",
 				"linkText": "See a therapist"
 			},
-			"Identify helpful things I can do that utilize my strengths and skills.",
-			"Have alone time to decompress after doing ally work",
+			"Identify helpful things I can do that best utilize my strengths and skills.",
 			"Recognize when I am exhausted or triggered, and know what to do about it",
 			"Gather other people to collaborate with",
 			"Increase my personal friendship connections within this movement"
