@@ -24,6 +24,10 @@ textarea {
 }
 
 /* COMPONENTS */
+a, button {
+  cursor: pointer;
+}
+
 button {
   background-color: #eee;
   border: 0;
@@ -36,6 +40,19 @@ button:focus {
 }
 .fa-toggle-on {
   color: #0081f1;
+}
+
+.collapsible {
+  max-height: 0;
+  overflow: hidden;
+  -moz-transition: max-height 0.2s ease-in;
+  -ms-transition: max-height 0.2s ease-in;
+  -webkit-transition: max-height 0.2s ease-in;
+  -o-transition: max-height 0.2s ease-in;
+  transition: max-height 0.2s ease-in;
+}
+.collapsible.collapsible-open {
+  max-height: 200px;
 }
 
 /* PAGE LAYOUT */
@@ -99,8 +116,12 @@ form .prompt .examples {
 form .prompt .examples .examples-label {
   font-weight: bold;
 }
-form .prompt .examples ul {
+form .prompt .examples .examples-block {
   margin-block-start: 0.25em;
+  margin-block-end: 0.25em;
+}
+form .prompt .examples .examples-block ul {
+  margin: 0;
   padding-inline-start: 20px;
 }
 

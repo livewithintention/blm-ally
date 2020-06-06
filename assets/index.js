@@ -27,7 +27,6 @@ app.controller('myCtrl', function($scope, $http, $sce, $q) {
     }, 0);
   };
 
-
   /* Load JSON */
   $scope.loadJsonInScope = function(jsonUrl, scopeVar, callback) {
       var deferred = $q.defer();

@@ -3,25 +3,25 @@
       ng-controller="myCtrl">
 <head>
 
-	<!-- Meta tags -->
+  <!-- Meta tags -->
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Vendor styles -->
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- Page styles -->
+  <!-- Page styles -->
   <link href="assets/index.css" type="text/css" rel="stylesheet"/>
 
-	<!-- Vendor scripts -->
+  <!-- Vendor scripts -->
   <script src="assets/lib/underscore-min.js"></script>
   <script src="assets/lib/angular-1.7.min.js"></script>
   <script src="assets/lib/angular-sanitize-1.7.9.js"></script>
 
-	<!-- Page scripts -->
-	<script src="assets/index.js" type="text/javascript"></script>
+  <!-- Page scripts -->
+  <script src="assets/index.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -30,7 +30,7 @@
 
 <div class="prompt header">
   <label>Setting intentions as a #BLM ally</label>
-	<div class="subtitle no-print">
+  <div class="subtitle no-print">
     <p>My hope is that these questions will help you create a personal, actionable manifesto to sustainably motivate you as an ally.</p>
   </div>
 </div>
@@ -38,38 +38,52 @@
 <div class="prompt"
      ng-repeat="prompt in prompts"
      ng-class="{'header': prompt.isHeader, 'no-input': prompt.noInput}">
-	<label ng-if="prompt.title !== undefined">{[prompt.title]}</label>
+  <label ng-if="prompt.title !== undefined">{[prompt.title]}</label>
   <div class="subtitle no-print"
      ng-if="prompt.subtitle !== undefined">{[prompt.subtitle]}</div>
 
-	<div class="examples no-print"
-			 ng-if="prompt.examples !== undefined">
-		<div class="examples-label"
-				 ng-if="prompt.exampleLabel !== undefined">
-			{[prompt.exampleLabel]}
-		</div>
-		<ul>
-			<li ng-repeat="example in prompt.examples">
-
-        <span ng-if="example.href===undefined">
-          <span ng-if="prompt.areExamplesQuoted">"</span>{[example]}<span ng-if="prompt.areExamplesQuoted">"</span>
-        </span>
-
-        <span ng-if="example.href!==undefined">
-          <a href="{[example.href]}" target="_blank">{[example.linkText]}</a>
-          <span ng-if="example.description" class="example-description">
-            - {[example.description]}
+  <!-- Pre-slice `examples` to avoid angular digest err on ng-repeat later -->
+  <div class="examples no-print"
+       ng-if="prompt.examples !== undefined"
+       ng-init="prompt.slicedExamples = [
+                   prompt.examples.slice(0,5), prompt.examples.slice(5)]">
+    <div class="examples-label"
+         ng-if="prompt.exampleLabel !== undefined">
+      {[prompt.exampleLabel]}
+      <a ng-if="prompt.examples.length > 5"
+         ng-click="prompt.hideExtras = !prompt.hideExtras">
+        (Show {[ prompt.hideExtras ? "more" : "less" ]})
+      </a>
+    </div>
+    <!-- By default, show only the first 5 examples.
+         Using two separate `ul`s just to make the animation look nicer.
+    -->
+    <div class="examples-block">
+      <ul ng-repeat="exampleSet in prompt.slicedExamples track by $index"
+          ng-init="prompt.hideExtras = true"
+          ng-class="{'collapsible': $index> 0,
+                     'collapsible-open': $index> 0 && !prompt.hideExtras}">
+        <!-- Show first 5 examples -->
+        <li ng-repeat="example in exampleSet">
+          <span ng-if="example.href===undefined">
+            <span ng-if="prompt.areExamplesQuoted">"</span>{[example]}<span ng-if="prompt.areExamplesQuoted">"</span>
           </span>
-        </span>
+  
+          <span ng-if="example.href!==undefined">
+            <a href="{[example.href]}" target="_blank">{[example.linkText]}</a>
+            <span ng-if="example.description" class="example-description">
+              - {[example.description]}
+            </span>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-			</li>
-		</ul>
-	</div>
-
-	<textarea ng-if="!prompt.isHeader && (prompt.noInput !== true)"
-					  data-lpignore="true"
-						ng-keyup="prompt.hasContent = handleTextAreaChange($event)"
-						ng-class="{'is-empty': prompt.hasContent !== true}"></textarea>
+  <textarea ng-if="!prompt.isHeader && (prompt.noInput !== true)"
+            data-lpignore="true"
+            ng-keyup="prompt.hasContent = handleTextAreaChange($event)"
+            ng-class="{'is-empty': prompt.hasContent !== true}"></textarea>
 </div>
 
 
@@ -79,9 +93,9 @@
 
   <button ng-click="toggleDisplay()">
     <i class="fa"
-    	 aria-hidden="true"
+       aria-hidden="true"
        ng-class="{'fa-toggle-on': isDisplayMinimal, 'fa-toggle-off': !isDisplayMinimal}"
-    	 ></i>
+       ></i>
     {[ isDisplayMinimal ? "Hide" : "Show" ]} print version
   </button>
   
