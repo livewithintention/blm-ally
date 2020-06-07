@@ -5,7 +5,7 @@
     "noInput": true
   },
   {
-      "title": "Manifesto: My personal intention for how I want to show up as an ally.",
+      "title": "Manifesto: My personal intention for how I most want to show up as an ally.",
       "exampleLabel": "Examples",
       "examples": [
         "I want to show up in a supportive way that helps others feel heard",
@@ -28,7 +28,7 @@
       "I will seek out and amplify Black perspectives",
       "I will do my best to listen and affirm, with an open mind, without interrupting",
       "I will find calls to action made by Black community leaders",
-			"I will initiate productive conversations about race issues with my relatives"
+			"I will have well-informed conversations about race issues with my relatives"
     ],
     "areExamplesQuoted": true
   },
@@ -49,26 +49,30 @@
 			{
 				"href": "https://lettersforblacklives.com/about-the-letter-ed27ea67eb2e",
 				"linkText": "Letters For Black Lives",
-				"description": "Resources for PoC allies to facilitate empathetic conversations about BLM with non-allied relatives"
+				"description": "Resources for PoC allies to talk with non-allied relatives"
 			},
       {
         "href": "https://www.amazon.com/gp/product/B07QBNKJTZ/",
         "linkText": "So You Want To Talk About Race (Ijeoma Oluo)",
-        "description": "Actionable tips on understanding subtle everyday racism and having productive conversations about race."
+        "description": "On understanding subtle everyday racism and having productive conversations about race."
       },
       {
         "href": "https://medium.com/@YawoBrown/the-subtle-linguistics-of-polite-white-supremacy-3f83c907ffff",
         "linkText": "The subtle linguistics of polite white supremacy | YawoBrown",
-        "description": "A quick primer on how covert, structural white supremacy has been hidden behind 'colorblind' language."
+        "description": "How covert, structural white supremacy has been hidden behind 'colorblind' language."
       },
 			{
 				"href": "https://twitter.com/TatianaTMac/status/1268909345141473281",
-				"linkText": "Suggestions for allies to avoid burnout & think about long-term commitment | @TatianaTMac"
+				"linkText": "Suggestions for allies to avoid burnout & think about long-term commitment"
+			},
+			{
+				"href": "https://docs.google.com/document/d/1PrAq4iBNb4nVIcTsLcNlW8zjaQXBLkWayL8EaPlh0bc/mobilebasic",
+				"linkText": "Tips for people at different anti-racist developmental stages"
 			},
       {
         "href": "https://www.amazon.com/dp/1620971933/",
         "linkText": "The New Jim Crow: Mass Incarceration In An Age Of Colorblindness (Michelle Alexander)",
-        "description": "A history on discriminatory mass incarceration (Blacks being disproportionately targeted for misdemeanors that whites commit at the same or higher rate) as an avenue for covert modern slavery."
+        "description": "A history on modern slavery through discriminatory mass incarceration."
       },
       {
         "href": "https://blacklivesmatters.carrd.co/",
@@ -93,7 +97,7 @@
       "I will learn what microaggressions look like",
       "I will learn how to mindfully sit with my discomfort so I can be present for others",
       "I will learn more about modern Black history as told by Black authors/speakers",
-			"I will learn how to address common sticky points with non-allies in a level-headed and informed way"
+			"I will learn how to address common sticky points with non-allies"
     ],
     "areExamplesQuoted": true
   },
@@ -113,11 +117,11 @@
     "isHeader": true
   },
   {
-    "title": "What personal self-interest drives me most as an ally?",
-    "subtitle": "(Independent of “why is this movement important”; if we're here, we already know that.)",
+    "title": "What personal self-interest drives me here?",
+    "subtitle": "(Independent of “why is this movement important”; we already know that. Be honest.)",
     "exampleLabel": "Examples",
     "examples": [
-      "Personal trauma/PoC experience? Empathy with feelings of disempowerment & danger?",
+      "Personal trauma/PoC experience? Empathy with feelings of oppression?",
       "Wanting people you care about personally to be safe? BIPOCs who are close to you?",
 			"Are you more comfortable in diverse, thriving communities?",
       "Wanting to contribute to something that matters?",
@@ -128,7 +132,7 @@
     "title": "When I feel discomfort about unpacking my own privilege, what can I remember?",
     "exampleLabel": "Examples",
     "examples": [
-      "I need to stay present for the people I'm allied to.",
+      "I need to stay present for others.",
       "It is okay and normal to feel discomfort.",
       "I did not choose this privilege. I am choosing to dismantle it.",
       "It is important for me to fully understand my privilege so I can actively reduce the ways that systemic privilege harms others."
