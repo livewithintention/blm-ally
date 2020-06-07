@@ -23,6 +23,14 @@ textarea {
   font-style: oblique;
 }
 
+a {
+  text-decoration: underline;
+  color: #7a00ff;
+}
+a:visited {
+  color: #6526a9;
+}
+
 /* COMPONENTS */
 a, button {
   cursor: pointer;
@@ -96,7 +104,6 @@ form .prompt .subtitle {
 }
 form .prompt textarea {
   margin: 20px 0;
-  margin-top: 0;
   width: 100%;
   -moz-transition: height 0.2s;
   -ms-transition: height 0.2s;
