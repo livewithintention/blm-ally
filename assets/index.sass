@@ -37,11 +37,12 @@ a, button
   cursor: pointer
 
 button
-  background-color: #eee
+  margin: 0 8px
+  padding: 16px 20px
   border: 0
   border-radius: 5px
-  padding: 16px 20px
   cursor: pointer
+  background-color: #eee
 
   &:focus
     outline: none
@@ -69,12 +70,14 @@ button
 body
   margin: 0
   text-align: center
-  padding: 50px
+  background-color: #000
 
 .title
   margin-bottom: 0
 
 form
+  background-color: #fff
+  padding: 25px 50px
   margin: 0 auto
   position: relative
   max-width: 600px
@@ -127,6 +130,9 @@ form
         ul
           margin: 0
           padding-inline-start: 20px
+
+  .controls
+    text-align: center
 
 =minimal-form-layout
   .prompt
