@@ -77,11 +77,10 @@
         <!-- Show first 5 examples -->
         <li ng-repeat="example in exampleSet">
           <span ng-if="example.href===undefined">
-            <span ng-if="prompt.areExamplesQuoted">"</span>{[example]}<span ng-if="prompt.areExamplesQuoted">"</span>
+            {[ prompt.areExamplesQuoted ? '"' : '' ]}{[ example ]}{[ prompt.areExamplesQuoted ? '"' : '' ]}
           </span>
-  
           <span ng-if="example.href!==undefined">
-            <a href="{[example.href]}" target="_blank">{[example.linkText]}</a>
+            {[ prompt.areExamplesQuoted ? '"' : '' ]}<a href="{[example.href]}" target="_blank">{[ example.linkText ]}</a>{[ prompt.areExamplesQuoted ? '"' : '' ]}
             <span ng-if="example.description" class="example-description">
               - {[example.description]}
             </span>
