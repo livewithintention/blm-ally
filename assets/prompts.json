@@ -41,6 +41,11 @@
         "linkText": "For Our White Friends Desiring To Be Allies | Sojo",
         "description": "On better holding space for BIPOCs"
       },
+			{
+				"href": "https://docs.google.com/document/d/1PrAq4iBNb4nVIcTsLcNlW8zjaQXBLkWayL8EaPlh0bc/mobilebasic",
+				"linkText": "Scaffolded Anti-Racist Resources",
+				"description": "Resources for each stage of your anti-racist self-education"
+			},
       {
         "href": "https://theconversation.com/what-is-intersectionality-all-of-who-i-am-105639",
         "linkText": "What is intersectionality? | The Conversation",
@@ -90,7 +95,6 @@
   },
   {
     "title": "Skills or self-education I will need to acquire in order to better fulfill my intentions",
-    "subtitle": "There's no shame in not having a skill right at this moment. We all start from wherever we are right now.",
     "exampleLabel": "Examples",
     "examples": [
 			"I will learn about ways everyday/structural racism shows up in my profession",
@@ -134,7 +138,7 @@
     "examples": [
       "I need to stay present for others.",
       "It is okay and normal to feel discomfort.",
-      "I did not choose this privilege. I am choosing to dismantle it.",
+      "Ignoring my privilege doesn't make it go away. I am choosing to dismantle it.",
       "It is important for me to fully understand my privilege so I can actively reduce the ways that systemic privilege harms others."
     ],
     "areExamplesQuoted": true
